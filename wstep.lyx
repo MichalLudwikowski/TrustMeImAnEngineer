@@ -3,17 +3,6 @@
 \begin_document
 \begin_header
 \textclass uwmthesis
-\begin_preamble
-\date{2015}
-\title{Chłodzenie komputera PC olejem mineralnym}
-\author{Michał Ludwikowski}
-\etitle{Cooling a PC computer with mineral oil}
-\wykonanaw{katedrze Matematycznych Metod Informatyki}
-\ewykonanaw{the Department of Mathematical Methods of Informatics}
-\podkierunkiem{dr Krzysztof Sopyła}
-\epodkierunkiem{dr Krzysztof Sopyła}
-\end_preamble
-\options wmii,inf,inz
 \use_default_options true
 \maintain_unincluded_children false
 \language polish
@@ -80,61 +69,12 @@
 
 \begin_body
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-maketitle
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-tableofcontents
-\end_layout
-
-\end_inset
-
-
-\backslash
-input{wstep.tex}
+\begin_layout Chapter*
+Wstęp
 \end_layout
 
 \begin_layout Standard
-
-\backslash
-input{rozdzial1.tex}
-\end_layout
-
-\begin_layout Standard
-
-\backslash
-input{streszczenie.tex}
-\end_layout
-
-\begin_layout Standard
-
-\backslash
-input{abstract.tex}
-\end_layout
-
-\begin_layout Standard
-
-\backslash
-input{bibliografia.tex}
-\end_layout
-
-\begin_layout Standard
-asdasdasd
-\end_layout
-
-\begin_layout Standard
-asdasdasdas
+tu będzie wstęp
 \end_layout
 
 \end_body
