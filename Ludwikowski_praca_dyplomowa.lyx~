@@ -101,40 +101,44 @@ tableofcontents
 \end_inset
 
 
-\backslash
-input{wstep.tex}
+\begin_inset CommandInset include
+LatexCommand include
+filename "wstep.lyx"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "rozdzial1.lyx"
 
-\backslash
-input{rozdzial1.tex}
-\end_layout
+\end_inset
 
-\begin_layout Standard
 
-\backslash
-input{streszczenie.tex}
-\end_layout
+\begin_inset CommandInset include
+LatexCommand include
+filename "streszczenie.lyx"
 
-\begin_layout Standard
+\end_inset
 
-\backslash
-input{abstract.tex}
-\end_layout
 
-\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "abstract.lyx"
 
-\backslash
-input{bibliografia.tex}
-\end_layout
+\end_inset
 
-\begin_layout Standard
-asdasdasd
-\end_layout
 
-\begin_layout Standard
-asdasdasdas
+\begin_inset CommandInset include
+LatexCommand include
+filename "bibliografia.lyx"
+
+\end_inset
+
+
 \end_layout
 
 \end_body

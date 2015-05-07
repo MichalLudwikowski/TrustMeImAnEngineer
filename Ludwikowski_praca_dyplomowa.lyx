@@ -5,9 +5,9 @@
 \textclass uwmthesis
 \begin_preamble
 \date{2015}
-\title{Chłodzenie komputera PC olejem mineralnym}
+\title{Optymalizacjia wydajnosci komputera poprzez minimalizację temperatury podzespołów.}
 \author{Michał Ludwikowski}
-\etitle{Cooling a PC computer with mineral oil}
+\etitle{Computer performance optimalization by reducing components temperature}
 \wykonanaw{katedrze Matematycznych Metod Informatyki}
 \ewykonanaw{the Department of Mathematical Methods of Informatics}
 \podkierunkiem{dr Krzysztof Sopyła}
