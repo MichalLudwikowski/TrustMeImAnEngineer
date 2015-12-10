@@ -108,43 +108,28 @@ Streszczenie
 \end_layout
 
 \begin_layout Standard
-Poniższa praca przedstawia zaprojektowanie oraz wykonanie automatycznego
- systemu chłodzącego stacji roboczej z wykorzystaniem platformy programistycznej
- dla systemów wbudowanych Arduino.
-\end_layout
-
-\begin_layout Standard
-W drugim rozdziale przedstawiony został proces projektowania i wykonania
- układu elektronicznego współpracującego z Arduino.
- Zawiera on schematy elektryczne układu pomiaru temperatury, układu sterowania
- pompy, układu wyświetlania danych.
-\end_layout
-
-\begin_layout Standard
-Rozdział trzeci poświęcony został implementacji sterownika systemu chłodzenia.
- Znajdziemy w nim opis technologi oraz środowiska w którym został napisany,
- poglądowe diagramy przedstawiające ideę działania sterownika oraz kod wraz
- z obszernymi opisami.
-\end_layout
-
-\begin_layout Standard
-Projekt systemu i sposób jego wykonania przedstawiony jest w rozdziale czwartym.
- Rozdział ten zawiera koncept pojemnika oraz dostosowania obudowy do potrzeb
- projektu.
- Proces wykonania systemu chłodzącego przedstawiony został na opisanych
- zdjęciach.
-\end_layout
-
-\begin_layout Standard
-Kolejny rozdział traktuje o pomiarach temperatury podzespołów podczas obciążenia.
- Wyniki pomiarów zostały zestawione na czytelnych wykresach oraz porównane
- zostały do wyników tychże testów przeprowadzonych przed modernizacją.
-\end_layout
-
-\begin_layout Standard
-Ostatni rozdział przedstawia możliwości optymalizacji osiągów stacji roboczej,
- wynikające z zastosowanego chłodzenia.
+Doskonale wiadomo iż elektronika, która otacza nas podczas pracy nagrzewa
+ się.
+ Jest to oczywiście zjawisko niekorzystne i nieporzadane w większości przypadków
+, jeżeli nie we wszystkich.
+ Komputery stacjonarne chłodzone są najczęściej powietrzem.
+ Wykorzystuje się do tego radioatory i wentylatory.
+ Ostatnimi czasy pojawiły się rozwiązania wykorzystujące ciecz do transportowani
+a ciepła, te rozwiązania odprowadzają ciepło tylko z punktów, do których
+ przyczepione są elementy układu chłodzącego.
  
+\end_layout
+
+\begin_layout Standard
+Poniższa praca przedstawia zaprojektowanie oraz wykonanie automatycznego
+ systemu chłodzącego, który odprowadza ciepło z całej powierzchni elektroniki
+ poprzez zanurzenie jej w cieczy, która nie przewodzi prądu.
+\end_layout
+
+\begin_layout Standard
+Rozwiązanie to pozwala na skuteczne odprowadzanie ciepła z podzespołów komputera
+, oraz rozwiązuje problem utrzymywania porządku wewnątrz obudowy naszego
+ komputera - problem przestaje istnieć.
 \end_layout
 
 \begin_layout Chapter*
@@ -152,50 +137,27 @@ Abstract
 \end_layout
 
 \begin_layout Standard
+It is well known that the electronics that surrounds us at work and at home
+ are overheating / Getting warmer and warmer.
+ This is obviously disadvantageous and undesirable phenomenon in most cases.
+ Desktop Computers are usually cooled by air using these radiators and fans.
+ There is a solution to our issue which is based on the fluid which transports
+ heat.
+ This solution is only conducting the heat from the points where cooling
+ system components are mounted.
+\end_layout
 
-\lang english
-The following thesis shows design and implementation of work station's automatic
- cooling system using embedded system programming platform Arduino.
+\begin_layout Standard
+This paper presents the design and creation of automatic cooling system
+ that draws heat away from the electronic parts of our Desktop, which entire
+ surface is immersed in a liquid that does not conduct electricity.
+\end_layout
+
+\begin_layout Standard
+This allows for efficient heat dissipation from computer components, and
+ solves the problem of keeping computer parts dirt-free since they are submerged
+ in a fluid.
  
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-In second chapter is presented design process and realization of electronic
- circuit working with Arduino.
- It contains electrical scheme of temperature reading circuit, pump enable
- circuit, data displaying circuit.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Third chapter was devoted to cooling system controller implementation.
- We find there technology and environment description, controller action
- diagrams and described code.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-System's design and how it's made are shown in fourth chapter.
- This chapter contains container and case adjustments concepts.
- Process of realization is featured by described pictures.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Next chapter deals with hardware temperatures readings.
- Results are shown on charts and compared to readings made before modernization.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Last chapter shows overclocking capabilities gained with cooling system
- application.
 \end_layout
 
 \begin_layout Chapter
@@ -241,15 +203,36 @@ Układ pracy
 \end_layout
 
 \begin_layout Standard
-Praca podzielona została na rozdziały odpowiadające kolejnym etapom tworzenia
- automatycznego systemu chodzenia stacji roboczej.
- Każdy z rozdziałów rozpoczyna się opisem technologii wykorzystanej przy
- realizacji danego etapu pracy.
- Następnie przedstawiony jest projekt etapu lud idea jego zastosowania.
- Na koniec udokumentowane jest jego wykonanie wraz z opisem poszczególnych
- kroków.
- Praca zawiera również rozdziały poświęcone testom i zestawieniom ich wyników
- za pomocą wykresów.
+W drugim rozdziale przedstawiony został proces projektowania i wykonania
+ układu elektronicznego współpracującego z Arduino.
+ Zawiera on schematy elektryczne układu pomiaru temperatury, układu sterowania
+ pompy, układu wyświetlania danych.
+\end_layout
+
+\begin_layout Standard
+Rozdział trzeci poświęcony został implementacji sterownika systemu chłodzenia.
+ Znajdziemy w nim opis technologi oraz środowiska w którym został napisany,
+ poglądowe diagramy przedstawiające ideę działania sterownika oraz kod wraz
+ z obszernymi opisami.
+\end_layout
+
+\begin_layout Standard
+Projekt systemu i sposób jego wykonania przedstawiony jest w rozdziale czwartym.
+ Rozdział ten zawiera koncept pojemnika oraz dostosowania obudowy do potrzeb
+ projektu.
+ Proces wykonania systemu chłodzącego przedstawiony został na opisanych
+ zdjęciach.
+\end_layout
+
+\begin_layout Standard
+Kolejny rozdział traktuje o pomiarach temperatury podzespołów podczas obciążenia.
+ Wyniki pomiarów zostały zestawione na czytelnych wykresach oraz porównane
+ zostały do wyników tychże testów przeprowadzonych przed modernizacją.
+\end_layout
+
+\begin_layout Standard
+Ostatni rozdział przedstawia możliwości optymalizacji osiągów stacji roboczej,
+ wynikające z zastosowanego chłodzenia.
 \end_layout
 
 \begin_layout Chapter
@@ -273,12 +256,84 @@ Opis technologii i środowiska
 Arduino
 \end_layout
 
+\begin_layout Standard
+Arduino jest platformą prototypową typu open source, opartą na łatwym w
+ użyciu hrdware oraz software.
+ Płytki Arduino są w stanie odczytywać dane różnego pochodzenia - światło
+ padające na sensor, przyciśnięty przycisk, dane z sieci - i przekształcać
+ je w żądane sygnały wyjścia - zapalenie diod LED, opublikowanie czegoś
+ w sieci czy załączenie silnika.
+\end_layout
+
+\begin_layout Standard
+Sama płytka Arduino jest mikrokontrolerem zamontowanym wraz z obsługą wejść/wyjś
+ć na pojedynczym układzie drukowanym.
+ Na urządzeniu znajdziemy kontroler, wygodne w użyciu, cufrowe i analogowe
+ linie wejścia/wyjścia, interfejs UART lub USB do komunikacji z komputerem.
+\end_layout
+
+\begin_layout Standard
+Celem projektu Arduino jest dostarczenie szerokiemu gronu ludzi narzędzi
+ wykorzystywanych do tworzenia własnych interaktywnych projektów wymagających
+ sterowania bądź
+\begin_inset space \space{}
+\end_inset
+
+przetwarzania odbieranych sygnałów.
+\end_layout
+
 \begin_layout Subsection
 Eagle
 \end_layout
 
+\begin_layout Standard
+EAGLE (z ang.
+ Easy Applicable Graphical Layout Editor) jest wszechstronnym oprogramowaniem
+ do tworzenia projektów PCB (z ang.
+ Printed Circuit Board).
+ EAGLE wykorzystywany jest przez profesjonalistów pracujących dla światowych
+ koncernów elektronicznych, hobbystów oraz studentów.
+\end_layout
+
+\begin_layout Standard
+Oprogramowanie składa się z trzech modułów z identycznym interfejsem użytkownika
+:
+\end_layout
+
+\begin_layout Itemize
+edytor schematów - umożliwia tworzenie symbolicznych, czytelnych schematów,
+ które wzbogacą dokumentację projektu,
+\end_layout
+
+\begin_layout Itemize
+edytor układu elektronicznego - przy pomocy tego modułu zaprojektujemy układ
+ gotowy do wydrukowania,
+\end_layout
+
+\begin_layout Itemize
+autorouter - moduł automatycznego tworzenia ścieżek elektrycznych na projektowan
+ym układzie elektronicznym.
+\end_layout
+
 \begin_layout Subsection
 Fritzing
+\end_layout
+
+\begin_layout Standard
+Fritzing to narzędzie służące do tworzenia schematów oraz rysunków poglądowych
+ projektów elektronicznych.
+ Fritzing jest narzędziem open source.
+ Narzędzie to pozwala na tworzenie czytelnych profesjonalnych schematów,
+ jednak to co wyróżnia to narzędzie to schematy poglądowe, które pokazują
+ nam faktyczny wygląd skomponowanego układu.
+ 
+\end_layout
+
+\begin_layout Standard
+Bogata biblioteka części różnych producentów (w tym Arduino), ciągle rośnie
+ ze względu na możliwość dodawania własnych części i dzieleniem się nimi
+ z innymi użytkownikami Fritzing.
+ Oprogramowanie jest na licencji open source.
 \end_layout
 
 \begin_layout Section
@@ -342,6 +397,26 @@ poszczególne kroki niezbędne do wykonania instalacji przedstawione na opisanyc
  zdjęciach
 \end_layout
 
+\begin_layout Section
+Opis technologii i środowiska 
+\end_layout
+
+\begin_layout Subsection
+CAD
+\end_layout
+
+\begin_layout Subsection
+AutoCAD
+\end_layout
+
+\begin_layout Section
+Projekt systemu chłodzącego
+\end_layout
+
+\begin_layout Section
+Wykonanie systemu chłodzącego
+\end_layout
+
 \begin_layout Chapter
 Przeprowadzenie testów wydajnościowych oraz porównanie wyników z danymi
  wyjściowymi
@@ -352,6 +427,22 @@ w tym rozdziale znajdą się opisy testów i ich przebieg, wykresy temperatur
  zmierzonych na rdzeniach procesora podczas obciażenia po wykonaniu instalacji
  oraz te przed, szybkie porównanie i podsumowanie wyników dotyczących temperatur
 y 
+\end_layout
+
+\begin_layout Section
+Opis środowiska
+\end_layout
+
+\begin_layout Subsection
+OCCT
+\end_layout
+
+\begin_layout Subsection
+Catzilla
+\end_layout
+
+\begin_layout Section
+Analiza wyników
 \end_layout
 
 \begin_layout Chapter
@@ -372,6 +463,22 @@ przedstawię co podkręcam
 
 \begin_layout Standard
 porównanie wyników z osiągami wyjściowymi
+\end_layout
+
+\begin_layout Section
+Opis zagadnienia overclockingu
+\end_layout
+
+\begin_layout Section
+Opis parametrów przed optymalizacją
+\end_layout
+
+\begin_layout Section
+Opis optymalizacji 
+\end_layout
+
+\begin_layout Section
+Analiza wyników optymalizacji
 \end_layout
 
 \begin_layout Chapter
