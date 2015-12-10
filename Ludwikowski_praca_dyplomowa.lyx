@@ -236,23 +236,10 @@ Ostatni rozdział przedstawia możliwości optymalizacji osiągów stacji robocz
 \end_layout
 
 \begin_layout Chapter
-Projekt i wykonanie elektronicznego układu współpracującego z Arduino
-\end_layout
-
-\begin_layout Standard
-W tym rozdziale zamieszczę opis zaprojektowania układu elektronicznego,
- czyli schematy połączeń katalogowe jak również poglądowe dla ułatwienia
- odczytywania dla niewtajemniczonych.
- Znajdzie się tu również opisu technologi z której będę korzystał co niesie
- za sobą brak rozdziału opisującego poszczególne technologie, każda z wykorzysta
-nych będzie opisana w odpowiadającym jej rozdziale.
+Opis technologii wykorzystanych podczas realizacji projektu
 \end_layout
 
 \begin_layout Section
-Opis technologii i środowiska
-\end_layout
-
-\begin_layout Subsection
 Arduino
 \end_layout
 
@@ -282,7 +269,7 @@ Celem projektu Arduino jest dostarczenie szerokiemu gronu ludzi narzędzi
 przetwarzania odbieranych sygnałów.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Eagle
 \end_layout
 
@@ -315,7 +302,7 @@ autorouter - moduł automatycznego tworzenia ścieżek elektrycznych na projekto
 ym układzie elektronicznym.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Fritzing
 \end_layout
 
@@ -337,23 +324,69 @@ Bogata biblioteka części różnych producentów (w tym Arduino), ciągle rośn
 \end_layout
 
 \begin_layout Section
-Projekt układu elektronicznego
+Wiring
 \end_layout
 
 \begin_layout Section
-Wykonanie układu elektrycznego
+Arduino Software (IDE)
+\end_layout
+
+\begin_layout Section
+CAD
+\end_layout
+
+\begin_layout Section
+AutoCAD
+\end_layout
+
+\begin_layout Section
+OCCT
+\end_layout
+
+\begin_layout Section
+Catzilla
 \end_layout
 
 \begin_layout Chapter
-Implementacja sterownika pompy chłodziwa w środowisku Wiring
+Realizacja projektu systemu chłodzącego
+\end_layout
+
+\begin_layout Section
+Elektroniczny układ współpracujący z Arduino
+\end_layout
+
+\begin_layout Subsection
+Projekt układu elektronicznego
 \end_layout
 
 \begin_layout Standard
-opis środowiska wiring
+W tym podrozdziale zamieszczę opis zaprojektowania układu elektronicznego,
+ czyli schematy połączeń katalogowe jak również poglądowe dla ułatwienia
+ odczytywania dla niewtajemniczonych
+\end_layout
+
+\begin_layout Subsection
+Wykonanie układu elektronicznego
+\end_layout
+
+\begin_layout Standard
+sprawozdanie z jego wykonania
+\end_layout
+
+\begin_layout Section
+Implementacja sterownika pompy chłodziwa w środowisku Wiring
+\end_layout
+
+\begin_layout Subsection
+Projekt algorytmu głównego
 \end_layout
 
 \begin_layout Standard
 schemat przedstawiający działanie algorytmu
+\end_layout
+
+\begin_layout Subsection
+Implementacja algorytmu
 \end_layout
 
 \begin_layout Standard
@@ -361,35 +394,19 @@ kod razem z objaśnieniami
 \end_layout
 
 \begin_layout Section
-Opis technologii i środowiska
+System chłodzący
 \end_layout
 
 \begin_layout Subsection
-Wiring
+Projekt systemu chłodzącego
+\end_layout
+
+\begin_layout Standard
+projekt całej instalacji wraz z chłodnicą i tak dalej
 \end_layout
 
 \begin_layout Subsection
-Arduino Software (IDE)
-\end_layout
-
-\begin_layout Section
-Projekt algorytmu głównego
-\end_layout
-
-\begin_layout Section
-Implementacja algorytmu
-\end_layout
-
-\begin_layout Chapter
-Zaprojektowanie i wykonanie systemu chłodzącego
-\end_layout
-
-\begin_layout Standard
-projekt akwarium w cad
-\end_layout
-
-\begin_layout Standard
-projekt całej instalacji 
+Wykonanie systemu chłodzącego
 \end_layout
 
 \begin_layout Standard
@@ -397,29 +414,9 @@ poszczególne kroki niezbędne do wykonania instalacji przedstawione na opisanyc
  zdjęciach
 \end_layout
 
-\begin_layout Section
-Opis technologii i środowiska 
-\end_layout
-
-\begin_layout Subsection
-CAD
-\end_layout
-
-\begin_layout Subsection
-AutoCAD
-\end_layout
-
-\begin_layout Section
-Projekt systemu chłodzącego
-\end_layout
-
-\begin_layout Section
-Wykonanie systemu chłodzącego
-\end_layout
-
 \begin_layout Chapter
-Przeprowadzenie testów wydajnościowych oraz porównanie wyników z danymi
- wyjściowymi
+Testy wydajnościowe, optymalizacja osiągów stacji roboczej oraz porównanie
+ wyników z danymi wyjściowymi
 \end_layout
 
 \begin_layout Standard
@@ -427,42 +424,6 @@ w tym rozdziale znajdą się opisy testów i ich przebieg, wykresy temperatur
  zmierzonych na rdzeniach procesora podczas obciażenia po wykonaniu instalacji
  oraz te przed, szybkie porównanie i podsumowanie wyników dotyczących temperatur
 y 
-\end_layout
-
-\begin_layout Section
-Opis środowiska
-\end_layout
-
-\begin_layout Subsection
-OCCT
-\end_layout
-
-\begin_layout Subsection
-Catzilla
-\end_layout
-
-\begin_layout Section
-Analiza wyników
-\end_layout
-
-\begin_layout Chapter
-Optymalizacja osiągów podzespołów komputera
-\end_layout
-
-\begin_layout Standard
-w tym rozdziale opiszę co to overclocking
-\end_layout
-
-\begin_layout Standard
-przedstawię to co było przed wykonaniem chłodzenia
-\end_layout
-
-\begin_layout Standard
-przedstawię co podkręcam
-\end_layout
-
-\begin_layout Standard
-porównanie wyników z osiągami wyjściowymi
 \end_layout
 
 \begin_layout Section
@@ -478,7 +439,15 @@ Opis optymalizacji
 \end_layout
 
 \begin_layout Section
+Testy wydajnościowe
+\end_layout
+
+\begin_layout Section
 Analiza wyników optymalizacji
+\end_layout
+
+\begin_layout Section
+Analiza wyników testów wydajnościowych
 \end_layout
 
 \begin_layout Chapter

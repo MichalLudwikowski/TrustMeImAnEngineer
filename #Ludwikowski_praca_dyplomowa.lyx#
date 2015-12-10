@@ -239,7 +239,7 @@ Ostatni rozdział przedstawia możliwości optymalizacji osiągów stacji robocz
 Opis technologii wykorzystanych podczas realizacji projektu
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Arduino
 \end_layout
 
@@ -269,7 +269,7 @@ Celem projektu Arduino jest dostarczenie szerokiemu gronu ludzi narzędzi
 przetwarzania odbieranych sygnałów.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Eagle
 \end_layout
 
@@ -302,7 +302,7 @@ autorouter - moduł automatycznego tworzenia ścieżek elektrycznych na projekto
 ym układzie elektronicznym.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Fritzing
 \end_layout
 
@@ -323,70 +323,65 @@ Bogata biblioteka części różnych producentów (w tym Arduino), ciągle rośn
  Oprogramowanie jest na licencji open source.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Wiring
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Arduino Software (IDE)
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 CAD
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 AutoCAD
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 OCCT
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Catzilla
 \end_layout
 
 \begin_layout Chapter
-Realizacja projektu systemu chłodzącego
+
+\end_layout
+
+\begin_layout Chapter
+Projekt i wykonanie elektronicznego układu współpracującego z Arduino
+\end_layout
+
+\begin_layout Standard
+W tym rozdziale zamieszczę opis zaprojektowania układu elektronicznego,
+ czyli schematy połączeń katalogowe jak również poglądowe dla ułatwienia
+ odczytywania dla niewtajemniczonych.
+ Znajdzie się tu również opisu technologi z której będę korzystał co niesie
+ za sobą brak rozdziału opisującego poszczególne technologie, każda z wykorzysta
+nych będzie opisana w odpowiadającym jej rozdziale.
 \end_layout
 
 \begin_layout Section
-Elektroniczny układ współpracujący z Arduino
-\end_layout
-
-\begin_layout Subsection
 Projekt układu elektronicznego
 \end_layout
 
-\begin_layout Standard
-W tym podrozdziale zamieszczę opis zaprojektowania układu elektronicznego,
- czyli schematy połączeń katalogowe jak również poglądowe dla ułatwienia
- odczytywania dla niewtajemniczonych
-\end_layout
-
-\begin_layout Subsection
-Wykonanie układu elektronicznego
-\end_layout
-
-\begin_layout Standard
-sprawozdanie z jego wykonania
-\end_layout
-
 \begin_layout Section
+Wykonanie układu elektrycznego
+\end_layout
+
+\begin_layout Chapter
 Implementacja sterownika pompy chłodziwa w środowisku Wiring
 \end_layout
 
-\begin_layout Subsection
-Projekt algorytmu głównego
+\begin_layout Standard
+opis środowiska wiring
 \end_layout
 
 \begin_layout Standard
 schemat przedstawiający działanie algorytmu
-\end_layout
-
-\begin_layout Subsection
-Implementacja algorytmu
 \end_layout
 
 \begin_layout Standard
@@ -394,15 +389,11 @@ kod razem z objaśnieniami
 \end_layout
 
 \begin_layout Section
-System chłodzący
+Projekt algorytmu głównego
 \end_layout
 
-\begin_layout Subsection
-Projekt systemu chłodzącego
-\end_layout
-
-\begin_layout Subsection
-Wykonanie systemu chłodzącego
+\begin_layout Section
+Implementacja algorytmu
 \end_layout
 
 \begin_layout Chapter
@@ -420,6 +411,14 @@ projekt całej instalacji
 \begin_layout Standard
 poszczególne kroki niezbędne do wykonania instalacji przedstawione na opisanych
  zdjęciach
+\end_layout
+
+\begin_layout Section
+Projekt systemu chłodzącego
+\end_layout
+
+\begin_layout Section
+Wykonanie systemu chłodzącego
 \end_layout
 
 \begin_layout Chapter
