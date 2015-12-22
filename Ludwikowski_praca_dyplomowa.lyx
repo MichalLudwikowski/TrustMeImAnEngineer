@@ -4,7 +4,7 @@
 \begin_header
 \textclass uwmthesis
 \begin_preamble
-\date{2015}
+\date{2016}
 \title{Opracowanie automatycznego systemu chłodzącego stacji roboczej z wykorzystaniem Arduino}
 \author{Michał Bartosz Ludwikowski}
 \etitle{Developing automatic cooling system for workstation using Arduino}
@@ -324,27 +324,158 @@ Bogata biblioteka części różnych producentów (w tym Arduino), ciągle rośn
 \end_layout
 
 \begin_layout Section
+Język programowania Arduino
+\end_layout
+
+\begin_layout Standard
+Ardino pasiada własny jezyk, język programowania Arduino, który bazuje na
+ środowisku Wiring oraz językach C/C++.
+\end_layout
+
+\begin_layout Subsection
 Wiring
+\end_layout
+
+\begin_layout Standard
+Wiring to platforma developerska, która jest podstawą języka programowania
+ Arduino.
+ Jest to platforma na licencji typu open-source złożona z języka programowania,
+ zintegrowanego środowiska deweloperskiego oraz mikrokontrolera wbudowanego
+ w jedą płytę (jak w przypadku Arduino).
+ Wiring oparty został o projekt Processing, który jest językiem i zintegrowanym
+ środowiskiem stworzonym na MIT (ang.
+ Massachusetts Institute of Technology) Media Lab.
+ Projekt Wiring rozpoczął się w 2003 roku w Instytucie Wzornictwa Interakcji
+ Ivrea.
+ Obecnie rozwijany w Szkole Architektury i Projektowania na Uniwersytecie
+ Los Andes w Kolumbii.
+ Wynalazcą platformy jest Hernando Barragán.
+ Środowisko Wiring IDE zostało napisane w języku JAVA.
+ Zaprojektowano je by wprowadzać elektroników, hobbystów i artystów do programow
+ania elektroniki.
 \end_layout
 
 \begin_layout Section
 Arduino Software (IDE)
 \end_layout
 
+\begin_layout Standard
+Wgrywanie projektów na płytkę Arduino odbywa się za pośrednictwem Arduino
+ IDE (ang.
+ Integrated Development Environment).
+ Jest to środowisko zawierające: 
+\end_layout
+
+\begin_layout Itemize
+edytor tekstu posiadający funkcje jak podświetlanie składni, wklejania,
+ kopiowania kodu, jego przszukiwanie i zamienianie czy automatycznego utrzymywan
+ie wcięć,
+\end_layout
+
+\begin_layout Itemize
+pole komunikatów zwracające wyniki działania Arduino Software IDE np.
+ rezultat zapisywania czy eksportu oraz informujące o błędach, które wystąpiły,
+\end_layout
+
+\begin_layout Itemize
+konsolę wyświetlającą wyjście Arduino Software oraz błędy występujące w
+ kodzie,
+\end_layout
+
+\begin_layout Itemize
+szeregowy monitor wyświetlający dane odebrane z płytki Arduino oraz umożliwiając
+y wysyłanie danych do płytki.
+\end_layout
+
+\begin_layout Standard
+Pliki będące wynikiem pracy w Arduino Software IDE nazywane są skeczami
+ i posiadają rozszerzenie .ino.
+ Arduino Software zbudowane jest na podstawie języka Processing.
+\end_layout
+
+\begin_layout Subsection
+Processing
+\end_layout
+
+\begin_layout Standard
+Processing jest językiem programowania IDE stworzonym przez Ben'a Fry i
+ Casey'a Reas.
+ Powstał w MediaLab działającym w MIT (ang.
+ Massachusetts Institute of Technology).
+ Prace nad nim rozpoczeły sie na potrzeby sztuki elektronicznej oraz projetkowan
+ia graficznego.
+ Język bazuje na jezyku Java, jednak ma uprostszoną składnię i graficzny
+ model programowania.
+\end_layout
+
 \begin_layout Section
 CAD
 \end_layout
 
-\begin_layout Section
+\begin_layout Standard
+CAD (ang.
+ computer aided design) jest wykorzystaniem systemów komputerowych do wspomagani
+a tworzenia, modyfikacji, analizy lub optymalizacji projektu.
+ Zamjduje zastosowanie w takich dziedzinach jak inzynieria mechaniczna,
+ inżynieria elektryczna czy inżynieria budowlana.
+\end_layout
+
+\begin_layout Subsection
 AutoCAD
+\end_layout
+
+\begin_layout Standard
+Program umożliwiający projektowanie wspomagane komputerowo.
+ Program stworzony został przez firmę Autodesk, a jego pierwsza wersja zaprezent
+owana została na targach COMDEX w Las Vegas w listopadzie 1982 roku, sprzedaż
+ produktu ruszyła miesiąc później.
+ Program jest nadal rozwijany i jego najnowsza wersja nosi nazwę AutoCAD
+ 2016.
+ AutoCAD umożliwia wspomaganie projektowania 2D, 3D oraz dzięki specjalnym
+ dodatkom 2.5D.
+ Pierwotnie wykorzystywany był tylko przez mechaników, jednak dzięki rozszerzeni
+u programu przez wiele nakładek mp.
+ AutoCAD Electrical, AtuoCAD Mechanical, Architectural Desktop, Civil Design
+ itp.
+ stał się platformą wykorzystywaną przez architektów i projektantów różnych
+ dziedzin inżynierii.
 \end_layout
 
 \begin_layout Section
 OCCT
 \end_layout
 
+\begin_layout Standard
+OCCT (ang.
+ OverClock Checking Tool) jest programem służącym do sprawdzania stabilności
+ pracy stacji roboczej.
+ Poza stabilnością sprawdzimy także temperatury osiągane przez poszczególne
+ podzespoły czy napięcie występujące na tych podzespołach.
+ Poza wymienionymi danymi program dostarcza również informacje o posiadanym
+ procesorze czy karcie graficznej.
+ Program podczas działania bardzo mocno obciąża komputer (wykorzystanie
+ procesora ~98 - 100%), jednocześnie dając możliwość stałego kontrolowania
+ wyżej wymienionych danych.
+ W programie dostępne są cztery testy: autorski, test na bazie biblioteki
+ LINPACK stworzonej przez Intel, test sprawdzający kartę graficzną pod względem
+ renderowania obiektów 3D oraz test zasilacza.
+ Wyniki przeprowadzonych testów obrazowane są na wykresach zapisanych na
+ dysku w postaci plików .png.
+\end_layout
+
 \begin_layout Section
 Catzilla
+\end_layout
+
+\begin_layout Standard
+Program typu benchmark stworzony przez autorów popularnego programu ALLPlayer.
+ Program wykorzystuje silnik graficzno-fizyczny stworzony przez studio Plastic.
+ Catzilla testuje wydajność sprzętu komputerowego z naciskiem na jego graficzne
+ możliwości.
+ Poza zdolnościami do generowania grafiki program sprawdzi zdolność procesora
+ do symulowania fizyki.
+ Wyniki testu przedstawione są w punktach, co daje bardzo czytelny i łatwy
+ do porównania wynik (im więcej punktów tym lepiej).
 \end_layout
 
 \begin_layout Chapter
@@ -355,14 +486,165 @@ Realizacja projektu systemu chłodzącego
 Elektroniczny układ współpracujący z Arduino
 \end_layout
 
+\begin_layout Standard
+Arduino samo w sobie jest gotowe do użycie po wyjęciu z pudełka.
+ Ma wyprowadzone wszelkie niezbędne piny.
+ Zadaniem osoby budującej projekt na jego podstawie jest dobranie i przygotowani
+e urządzeń peryferyjnych dla Arduino.
+ 
+\end_layout
+
 \begin_layout Subsection
 Projekt układu elektronicznego
 \end_layout
 
 \begin_layout Standard
-W tym podrozdziale zamieszczę opis zaprojektowania układu elektronicznego,
- czyli schematy połączeń katalogowe jak również poglądowe dla ułatwienia
- odczytywania dla niewtajemniczonych
+Komunikacja z mikrokontrolerem jest istotnym elementem tego projektu.
+ Arduino ma pokazywać aktualną średnią temperaturę cieczy, oraz temperaturę
+ po przekroczeniu której załączona zostanie pompa.
+ Temperatura załączenia pompy ustawiana jest przez użytkownika.
+ Tak więc do komunikacji niezbędny będzie wyświetlacz.
+ Do tego typu danych wybrany został wyświetlacz LCD posiadający dwa rzędy
+ znaków po 16 znaków w każdym.
+ Do ustawiania temperatury wykorzystane zostały dwa przyciski monostabilne,
+ których zwarcie monitorowane będzie przez mikrokontroler.
+\end_layout
+
+\begin_layout Standard
+Układ elektroniczny systemu chłodzącego musi również być w stanie mierzyć
+ temperaturę cieczy.
+ Do tego zadania wybrane zostały dwa czujniki LM35, które cechują się szerokim
+ zakresem pomiaru (od -50°C do +150°C), w którym mieści się zakres odczytywanych
+ temperatur.
+ Ciecz minimalnie będzie osiągała temperaturę pokojową, a maksymalnie nie
+ przekroczy 100°C.
+\end_layout
+
+\begin_layout Standard
+Nagrzaną przez podzespoły cieczy należy wychłodzić poza zbiornikiem z komputerem.
+ Aby przetłoczyć ciecz poza pojemnik wykorzystano pompkę elektryczną, której
+ wymagane zasilanie znacznie przewyższa możliwości Arduino.
+ Wykorzystano więc przekaźnik, który wysterowany przez Arduino załączy pompkę
+ w odpowiednim momencie.
+\end_layout
+
+\begin_layout Standard
+Podsumowując, nasz układ elektroniczny składać się będzie z:
+\end_layout
+
+\begin_layout Itemize
+płytki Arduino,
+\end_layout
+
+\begin_layout Itemize
+wyświetlacza LCD 2 razy po 16 znaków,
+\end_layout
+
+\begin_layout Itemize
+dwóch przycisków monostablinych,
+\end_layout
+
+\begin_layout Itemize
+dwóch czujników temperatury LM35,
+\end_layout
+
+\begin_layout Itemize
+przekaźnika,
+\end_layout
+
+\begin_layout Itemize
+pompki,
+\end_layout
+
+\begin_layout Itemize
+zewnętrznego źródła zasilania.
+\end_layout
+
+\begin_layout Standard
+Połączenia między wszystkimi podzespołami zostały zaprojektowane zgodnie
+ z notami katalogowymi poszczególnych podzespołów.
+ Projekt układu elektronicznego przedstawiony został na schemacie.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename schematElektryczny.png
+	width 100text%
+	groupId rysunki
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schemat przedstawiający sposób połączenia podzespołów elektronicznych układu
+ chłodzącego.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+By zobrazować połączenie między poszczególnymi elementami wykonano również
+ schemat poglądowy.
+ Na tym schemacie symbole zostały zastąpione grafikami przybliżający faktyczny
+ wygląd poszczególnych elementów (nie zostały zachowane proporcje ze względu
+ na zróżnicowany rozmiary elementów układu), oraz przedstawione wszystkie
+ niezbędne fizyczne połączenia.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename schematPogladowy.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schemat poglądowy układu elektronicznego 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -472,6 +754,14 @@ czy jest zauważalna różnica
 
 \begin_layout Chapter*
 Spis rysunków
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter*
