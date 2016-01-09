@@ -195,7 +195,47 @@ Niniejsza praca ma na celu przedstawienie procesu zaprojektowania oraz wykonania
  do stworzenia skutecznego systemu chłodzącego.
  Skuteczność systemu omówiona i podsumowana zostanie na wykresach temperatur
  podzespołów zebranych podczas wzmożonej pracy stacji roboczej.
- 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename zdjęcia/WP_20160109_13_21_57_Pro.jpg
+	lyxscale 50
+	width 80text%
+	groupId fotografie
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gotowy projekt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -246,9 +286,9 @@ Arduino
 \begin_layout Standard
 Arduino jest platformą prototypową typu open source, opartą na łatwym w
  użyciu hrdware oraz software.
- Płytki Arduino są w stanie odczytywać dane różnego pochodzenia - światło
- padające na sensor, przyciśnięty przycisk, dane z sieci - i przekształcać
- je w żądane sygnały wyjścia - zapalenie diod LED, opublikowanie czegoś
+ Płytki Arduino (Rysunek 2.1) są w stanie odczytywać dane różnego pochodzenia
+ - światło padające na sensor, przyciśnięty przycisk, dane z sieci - i przekszta
+łcać je w żądane sygnały wyjścia - zapalenie diod LED, opublikowanie czegoś
  w sieci czy załączenie silnika.
 \end_layout
 
@@ -269,61 +309,48 @@ Celem projektu Arduino jest dostarczenie szerokiemu gronu ludzi narzędzi
 przetwarzania odbieranych sygnałów.
 \end_layout
 
-\begin_layout Section
-Eagle
-\end_layout
-
 \begin_layout Standard
-EAGLE (z ang.
- Easy Applicable Graphical Layout Editor) jest wszechstronnym oprogramowaniem
- do tworzenia projektów PCB (z ang.
- Printed Circuit Board).
- EAGLE wykorzystywany jest przez profesjonalistów pracujących dla światowych
- koncernów elektronicznych, hobbystów oraz studentów.
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename zdjęcia/płytkaUno.png
+	scale 50
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-Oprogramowanie składa się z trzech modułów z identycznym interfejsem użytkownika
-:
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Arduino UNO
 \end_layout
 
-\begin_layout Itemize
-edytor schematów - umożliwia tworzenie symbolicznych, czytelnych schematów,
- które wzbogacą dokumentację projektu,
+\end_inset
+
+
 \end_layout
 
-\begin_layout Itemize
-edytor układu elektronicznego - przy pomocy tego modułu zaprojektujemy układ
- gotowy do wydrukowania,
-\end_layout
-
-\begin_layout Itemize
-autorouter - moduł automatycznego tworzenia ścieżek elektrycznych na projektowan
-ym układzie elektronicznym.
-\end_layout
-
-\begin_layout Section
-Fritzing
-\end_layout
-
-\begin_layout Standard
-Fritzing to narzędzie służące do tworzenia schematów oraz rysunków poglądowych
- projektów elektronicznych.
- Fritzing jest narzędziem open source.
- Narzędzie to pozwala na tworzenie czytelnych profesjonalnych schematów,
- jednak to co wyróżnia to narzędzie to schematy poglądowe, które pokazują
- nam faktyczny wygląd skomponowanego układu.
+\begin_layout Plain Layout
+\align center
+Źródło: http://blog.khron.net/wp-content/uploads/2014/05/ArduinoUno_R3_Front.jpg
  
 \end_layout
 
-\begin_layout Standard
-Bogata biblioteka części różnych producentów (w tym Arduino), ciągle rośnie
- ze względu na możliwość dodawania własnych części i dzieleniem się nimi
- z innymi użytkownikami Fritzing.
- Oprogramowanie jest na licencji open source.
+\end_inset
+
+
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Język programowania Arduino
 \end_layout
 
@@ -332,7 +359,7 @@ Ardino pasiada własny jezyk, język programowania Arduino, który bazuje na
  środowisku Wiring oraz językach C/C++.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Wiring
 \end_layout
 
@@ -355,7 +382,7 @@ Wiring to platforma developerska, która jest podstawą języka programowania
 ania elektroniki.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Arduino Software (IDE)
 \end_layout
 
@@ -363,7 +390,7 @@ Arduino Software (IDE)
 Wgrywanie projektów na płytkę Arduino odbywa się za pośrednictwem Arduino
  IDE (ang.
  Integrated Development Environment).
- Jest to środowisko zawierające: 
+ Jest to środowisko zawierające (Rysunek 2.2): 
 \end_layout
 
 \begin_layout Itemize
@@ -393,7 +420,46 @@ Pliki będące wynikiem pracy w Arduino Software IDE nazywane są skeczami
  Arduino Software zbudowane jest na podstawie języka Processing.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename zdjęcia/ardideSCRE.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Arduino IDE
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
 Processing
 \end_layout
 
@@ -406,6 +472,144 @@ Processing jest językiem programowania IDE stworzonym przez Ben'a Fry i
 ia graficznego.
  Język bazuje na jezyku Java, jednak ma uprostszoną składnię i graficzny
  model programowania.
+\end_layout
+
+\begin_layout Section
+Narzędzia do projektowania elektroniki
+\end_layout
+
+\begin_layout Subsection
+Eagle
+\end_layout
+
+\begin_layout Standard
+EAGLE (z ang.
+ Easy Applicable Graphical Layout Editor) jest wszechstronnym oprogramowaniem
+ do tworzenia projektów PCB (z ang.
+ Printed Circuit Board).
+ EAGLE wykorzystywany jest przez profesjonalistów pracujących dla światowych
+ koncernów elektronicznych, hobbystów oraz studentów.
+\end_layout
+
+\begin_layout Standard
+Oprogramowanie składa się z trzech modułów z identycznym interfejsem użytkownika
+ (Rysunek 2.3):
+\end_layout
+
+\begin_layout Itemize
+edytor schematów - umożliwia tworzenie symbolicznych, czytelnych schematów,
+ które wzbogacą dokumentację projektu,
+\end_layout
+
+\begin_layout Itemize
+edytor układu elektronicznego - przy pomocy tego modułu zaprojektujemy układ
+ gotowy do wydrukowania,
+\end_layout
+
+\begin_layout Itemize
+autorouter - moduł automatycznego tworzenia ścieżek elektrycznych na projektowan
+ym układzie elektronicznym.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename zdjęcia/eagleSCRE.png
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Program EAGLE - wszystkie okna
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Fritzing
+\end_layout
+
+\begin_layout Standard
+Fritzing to narzędzie służące do tworzenia schematów oraz rysunków poglądowych
+ projektów elektronicznych.
+ Fritzing jest narzędziem open source.
+ Narzędzie to pozwala na tworzenie czytelnych profesjonalnych schematów,
+ jednak to co wyróżnia to narzędzie to schematy poglądowe (Rysunek 2.4),
+ które pokazują nam faktyczny wygląd skomponowanego układu.
+ 
+\end_layout
+
+\begin_layout Standard
+Bogata biblioteka części różnych producentów (w tym Arduino), ciągle rośnie
+ ze względu na możliwość dodawania własnych części i dzieleniem się nimi
+ z innymi użytkownikami Fritzing.
+ Oprogramowanie jest na licencji open source.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename zdjęcia/fritzSCRE.png
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Program Fritzing - edytor schematów poglądowych
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -442,6 +646,10 @@ u programu przez wiele nakładek mp.
 \end_layout
 
 \begin_layout Section
+Narzędzia do testów stabilności i benchmark
+\end_layout
+
+\begin_layout Subsection
 OCCT
 \end_layout
 
@@ -463,7 +671,7 @@ OCCT (ang.
  dysku w postaci plików .png.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Catzilla
 \end_layout
 
@@ -487,11 +695,28 @@ Elektroniczny układ współpracujący z Arduino
 \end_layout
 
 \begin_layout Standard
-Arduino samo w sobie jest gotowe do użycie po wyjęciu z pudełka.
- Ma wyprowadzone wszelkie niezbędne piny.
- Zadaniem osoby budującej projekt na jego podstawie jest dobranie i przygotowani
-e urządzeń peryferyjnych dla Arduino.
- 
+Płytka Arduino zapewnia wyprowadzenie pinów komunikacyjnych mikrokontrolera.
+ Zadaniem osoby budującej projekt na jego podstawie jest zaprojektowanie
+ i wykonanie całego zestawu urządzeń peryferyjnych.
+\end_layout
+
+\begin_layout Standard
+W przypadku tego projektu niezbędne będą urządzenia do komunikacji z użytkowniki
+em, ponieważ to on decyduje o momencie załączenia pompy oraz będzie miał
+ możliwość śledzenia temperatury cieczy.
+ Cały układ poza odebraniem danych od użytkownika musi być w stanie zmierzyć
+ temperaturę cieczy wewnątrz pojemnika z komputerem.
+ Jak wiadomo płyta główna jest sporym podzespołem więc rozmiary pojemnika,
+ w którym zanurzony będzie komputer będą znaczące dla odczytu temperatury.
+ Zastosowano więc dwa czujniki temperatury, które odczytywać będą temperaturę
+ z dwóch różnych miejsc w pojemniku.
+ Ciecz znajdująca się wewnątrz pojemnika musi mieć gdzie oddać ciepło przejęte
+ z podzespołów.
+ W tym celu zastosowano pompę, która przetłoczy ciecz przez zewnętrzną chłodnicę.
+ Pracując przy komputerze użytkownicy często skupiają się tylko na swoim
+ zadaniu.
+ By system był efektywny zastosowano właśnie automatyczne sterowanie załączeniem
+ pompy, wykorzystujące Arduino.
 \end_layout
 
 \begin_layout Subsection
@@ -563,7 +788,8 @@ zewnętrznego źródła zasilania.
 \begin_layout Standard
 Połączenia między wszystkimi podzespołami zostały zaprojektowane zgodnie
  z notami katalogowymi poszczególnych podzespołów.
- Projekt układu elektronicznego przedstawiony został na schemacie.
+ Projekt układu elektronicznego przedstawiony został na schemacie (Rysunek
+ 3.1).
 \end_layout
 
 \begin_layout Standard
@@ -574,23 +800,29 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename schematElektryczny.png
-	width 100text%
-	groupId rysunki
+	width 80text%
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Schemat przedstawiający sposób połączenia podzespołów elektronicznych układu
- chłodzącego.
+Schemat elektryczny układu współpracującego z Arduino wykonany w EAGLE
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -602,24 +834,25 @@ Schemat przedstawiający sposób połączenia podzespołów elektronicznych ukł
 \begin_layout Standard
 By zobrazować połączenie między poszczególnymi elementami wykonano również
  schemat poglądowy.
- Na tym schemacie symbole zostały zastąpione grafikami przybliżający faktyczny
- wygląd poszczególnych elementów (nie zostały zachowane proporcje ze względu
- na zróżnicowany rozmiary elementów układu), oraz przedstawione wszystkie
- niezbędne fizyczne połączenia.
+ Na tym schemacie (Rysunek 3.2) symbole zostały zastąpione grafikami przybliżając
+y faktyczny wygląd poszczególnych elementów (nie zostały zachowane proporcje
+ ze względu na zróżnicowany rozmiary elementów układu), oraz przedstawione
+ wszystkie niezbędne fizyczne połączenia.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
-placement H
+placement h
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename schematPogladowy.png
 	lyxscale 50
-	width 100text%
+	width 80text%
 
 \end_inset
 
@@ -630,7 +863,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Schemat poglądowy układu elektronicznego 
+Schemat poglądowy wykonany we Fritzing
 \end_layout
 
 \end_inset
@@ -652,11 +885,101 @@ Wykonanie układu elektronicznego
 \end_layout
 
 \begin_layout Standard
-sprawozdanie z jego wykonania
+Wykonanie układu elektronicznego rozpoczęto od wykonania modułu odpowiedzialnego
+ za komunikację z użytkownikiem.
+ Elementy zamontowane na płytce stykowej projektu (Rysunek 3.2) zostały zamontowa
+ne na płytce prototypowej.
+ Montaż części odpowiedzialnych za komunikację na jednej płytce umożliwił
+ wyprowadzenie tego modułu na długich przewodach i umieszczenie ich w widocznym
+ miejscu obudowy.
+ Przewody zakończone zostały goldpinami w celu umożliwienia podpięcia ich
+ do płytki Arduino (Rysunek 3.3).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename zdjęcia/WP_20151202_15_22_13_Pro.jpg
+	lyxscale 50
+	width 80text%
+	groupId fotografie
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Zmontowany moduł komunikacji
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Czujniki temperatury również zostały przylutowane do długich przewodów by
+ można było umieścić je w odpowiednich miejscach w obudowie.
+ Zasilacz, pompa i przekaźnik są elementami gotowymi.
+ Wystarczyło je tylko odpowiednio podłączyć do płytki Arduino lub przekaźnika
+ (Rysunek 3.4) i zaimplementować ich pracę w oprogramowaniu do Arduino.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename zdjęcia/WP_20160104_14_41_22_Pro.jpg
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Podłączony układ elektryczny współpracujący z Arduino
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
-Implementacja sterownika pompy chłodziwa w środowisku Wiring
+Implementacja sterownika układu chłodzącego w środowisku Wiring
 \end_layout
 
 \begin_layout Subsection
@@ -664,7 +987,61 @@ Projekt algorytmu głównego
 \end_layout
 
 \begin_layout Standard
-schemat przedstawiający działanie algorytmu
+Algorytm główny sterownika ma kilka zadań.
+ Jednym z nich jest stałe monitorowanie odczytu czujników temperatury i
+ na podstawie tych odczytów, obliczanie i wyświetlanie temperatury cieczy
+ na ekranie.
+ Pomiar temperatury cieczy znajdującej się obudowie jest również wyznacznikiem
+ momentu załączeniu pompy.
+ Gdy temperatura cieczy w obudowie przekroczy ustawioną przez użytkownika
+ temperaturę krytyczną, Arduino ma za zadanie załączenie pompy, która przetłoczy
+ ciecz przez chłodnicę.
+ Gdy temperatura cieczy spadnie poniżej poziomu krytycznego, Arduino wyłączy
+ pompę.
+ Poziom krytyczny, o którym mowa ustawiany jest przez użytkownika przy pomocy
+ przycisków monostabilnych.
+ Nasłuchiwanie wspomnianych przycisków to również jedno z zadań sterownika.
+ Praca sterownika przedstawiona została na diagramie przepływu (Rysunek
+ 3.5).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename zdjęcia/diagramSterownika.png
+	lyxscale 50
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagram przepływu pracy sterownika
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -752,20 +1129,12 @@ co jest zbędne a co konieczne
 czy jest zauważalna różnica
 \end_layout
 
-\begin_layout Chapter*
-Spis rysunków
-\end_layout
-
 \begin_layout Standard
 \begin_inset FloatList figure
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Chapter*
-Spis fotografii
 \end_layout
 
 \begin_layout Chapter*
